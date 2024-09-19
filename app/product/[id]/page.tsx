@@ -35,7 +35,7 @@ async function getData(id: string) {
 
 export default async function ProductPage({params}: {params: {id: string}}) {
     noStore();
-        const data = await getData(params.id);
+    const data = await getData(params.id);
     return (
         <section className="max-w-7xl mx-auto px-4 lg:px-8 lg:grid lg:grid-rows-1 lg:grid-cols-7 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
             <Carousel className="lg:row-end-1 lg:col-span-4">
